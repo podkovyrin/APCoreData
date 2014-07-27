@@ -5,6 +5,7 @@
 [![Platform](https://img.shields.io/cocoapods/p/APCoreData.svg?style=flat)](http://cocoadocs.org/docsets/APCoreData)
 
 APCoreData is simple and clear `CoreData` stack and useful categories, that partially based on https://github.com/soffes/ssdatakit
+
 Stack is configured with two `NSManagedObjectContext` objects on main and backgorund threads with merge changes strategy via notification (learn more: http://floriankugler.com/blog/2013/5/11/backstage-with-nested-managed-object-contexts).
 
 ## Usage
