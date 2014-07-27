@@ -1,16 +1,19 @@
 # APCoreData
 
-[![CI Status](http://img.shields.io/travis/Andrew Podkovyrin/APCoreData.svg?style=flat)](https://travis-ci.org/Andrew Podkovyrin/APCoreData)
 [![Version](https://img.shields.io/cocoapods/v/APCoreData.svg?style=flat)](http://cocoadocs.org/docsets/APCoreData)
 [![License](https://img.shields.io/cocoapods/l/APCoreData.svg?style=flat)](http://cocoadocs.org/docsets/APCoreData)
 [![Platform](https://img.shields.io/cocoapods/p/APCoreData.svg?style=flat)](http://cocoadocs.org/docsets/APCoreData)
 
+APCoreData is simple and clear `CoreData` stack and useful categories, that partially based on https://github.com/soffes/ssdatakit
+Stack is configured with two `NSManagedObjectContext` objects on main and backgorund threads with merge changes strategy via notification (learn more: http://floriankugler.com/blog/2013/5/11/backstage-with-nested-managed-object-contexts).
+
 ## Usage
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
-## Requirements
-
+```obj-c
+// init CoreData stack in `-application:didFinishLaunchingWithOptions:`
+//
+[NSManagedObjectContext ap_managedObjectContext];
+```
 ## Installation
 
 APCoreData is available through [CocoaPods](http://cocoapods.org). To install

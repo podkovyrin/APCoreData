@@ -1,0 +1,14 @@
+PODS:
+  - APCoreData (0.1.0)
+
+DEPENDENCIES:
+  - APCoreData (from `../`)
+
+EXTERNAL SOURCES:
+  APCoreData:
+    :path: ../
+
+SPEC CHECKSUMS:
+  APCoreData: 20620dae5943a773179b913ee48a0eac4edf662f
+
+COCOAPODS: 0.33.1
