@@ -182,7 +182,7 @@
         self.insertedRowIndexPaths.count +
         self.updatedRowIndexPaths.count;
     
-	if (self.animateFetchedResultsControllerChanges || totalChangesCount < APCDK_MAX_FRC_CHANGES_COUNT) {
+	if (self.animateFetchedResultsControllerChanges && totalChangesCount < APCDK_MAX_FRC_CHANGES_COUNT) {
         [self.tableView beginUpdates];
         
         [self.tableView deleteSections:self.deletedSectionIndexes withRowAnimation:UITableViewRowAnimationAutomatic];
