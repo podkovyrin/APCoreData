@@ -37,15 +37,13 @@
         self.backgroundManagedObjectContext.undoManager = nil;
         
         [[NSNotificationCenter defaultCenter] addObserverForName:NSManagedObjectContextDidSaveNotification
-                                                          object:nil
+                                                          object:self.backgroundManagedObjectContext
                                                            queue:nil
                                                       usingBlock:^(NSNotification *note) {
                                                           NSManagedObjectContext *moc = self.managedObjectContext;
-                                                          if (note.object != moc) {
-                                                              [moc performBlock:^{
-                                                                  [moc mergeChangesFromContextDidSaveNotification:note];
-                                                              }];
-                                                          }
+                                                          [moc performBlock:^{
+                                                              [moc mergeChangesFromContextDidSaveNotification:note];
+                                                          }];
                                                       }];
     }
     return self;
