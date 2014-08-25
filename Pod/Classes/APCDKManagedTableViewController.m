@@ -88,6 +88,8 @@
 #pragma mark - Callbacks
 
 - (void)didCreateFetchedResultsController {
+    [super didCreateFetchedResultsController];
+    
 	[self.tableView reloadData];
 }
 

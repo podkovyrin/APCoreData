@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "APCoreData"
-  s.version          = "0.1.2"
+  s.version          = "0.1.3"
   s.summary          = "CoreData stack and useful categories"
   s.homepage         = "https://github.com/podkovyrin/APCoreData"
   s.license          = 'MIT'

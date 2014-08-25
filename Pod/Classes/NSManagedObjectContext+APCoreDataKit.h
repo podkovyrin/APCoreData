@@ -14,6 +14,6 @@
 + (NSManagedObjectContext *)ap_backgroundManagedObjectContext;
 
 /// Save
-- (void)ap_saveWithBlock:(void (^)())block;
+- (void)ap_save;
 
 @end

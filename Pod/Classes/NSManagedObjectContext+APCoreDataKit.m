@@ -22,16 +22,12 @@
 
 #pragma mark - Save
 
-- (void)ap_saveWithBlock:(void (^)())block {
-    [self performBlockAndWait:^{
-        block();
-        
-        NSError *error = nil;
-        [self save:&error];
-        if (error) {
-            APCDKLog(@"ap_saveWithBlock: %@", error);
-        }
-    }];
+- (void)ap_save {
+    NSError *error = nil;
+    [self save:&error];
+    if (error) {
+        APCDKLog(@"ap_saveWithBlock: %@", error);
+    }
 }
 
 @end
